@@ -33,11 +33,11 @@ int main() {
     double sta = 0, end = *std::max_element(v, v + N);
     while (sta + eps < end) {
         double tmp = sta + (end - sta) / 2;
-        if (check(tmp) && res < tmp) {
+        if (check(tmp)) {
             res = tmp;
             sta = tmp;
         } else {
-            end -= eps;
+            end = tmp;
         }
     }
     std::cout << std::setiosflags(std::ios::fixed) << std::setprecision(3);
