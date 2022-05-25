@@ -30,7 +30,7 @@ int main() {
         std::cin >> x;
         v[i] = pi * x * x;
     }
-    double sta = 0, end = *std::min_element(v, v + N);
+    double sta = 0, end = *std::max_element(v, v + N);
     while (sta + eps < end) {
         double tmp = sta + (end - sta) / 2;
         if (check(tmp) && res < tmp) {
