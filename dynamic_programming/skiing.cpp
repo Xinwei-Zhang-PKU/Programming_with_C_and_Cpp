@@ -1,3 +1,4 @@
+// http://cxsjsx.openjudge.cn/hw202214/A/
 #include <iostream>
 #include <vector>
 #include <algorithm>
