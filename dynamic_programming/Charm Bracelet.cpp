@@ -31,7 +31,7 @@ int main() {
     }
     cout << dp[N][M] << endl;
 }
-/*
+*/
 
 // After applying the rolling array:
 
